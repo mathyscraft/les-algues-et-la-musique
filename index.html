@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet d'es</title>
+</head>
+<body onkeypress="if (event.code == 'Space') return false">
+    <nav class="nav-bar">
+        <a href="#title">
+            <img id="icon" src="mascotte.png" width="100px">
+        </a>
+        <ul>
+            <li><a href="#problematique">Problématique</a></li>
+            <li><a href="#protocole">Protocole</a></li>
+            <li><a href="#resultats-attendus">Résultats attendus</a></li>
+            <li><a href="#hypothese">Hypothèse</a></li>
+        </ul>
+        <ul>
+            <li><a href="#montage">Montage</a></li>
+            <li><a href="#resultats">Résultats</a></li>
+            <li><a href="#interpretation">Interprétation</a></li>
+            <li><a href="#critiques">Critiques</a></li>
+        </ul>
+    </nav>
+
+    <div class="slide" id="title" style="background-image: url(./img/backgrounds/2.png)">
+        <h1>PROJET D'ENSEIGNEMENT SCIENTIFIQUE</h1>
+        <p>By Louison, Lucile & Mathys</p>
+    </div>
+
+    <div class="slide" id="problematique" style="background-image: url(./img/backgrounds/4.png)">
+        <h1>PROBLEMATIQUE</h1>
+        <h2>Est-il possible d'accélérer la photosynthèse d'algues grâce a de la musique ?</h2>
+        <p>OBJECTIF CITOYEN : UTILISER CES PLANTES POUR DIMINUER LA QUANTITE DE CO2 DANS L'AIR DE ZONES POLLUEES</p>
+    </div>
+
+    <div class="slide" id="protocole" style="background-image: url(./img/backgrounds/6.png)">
+        <h1>PROTOCOLE EXPERIMENTAL</h1>
+        <div class="flexrow">
+            <div class="flexcolumn">
+                <h2>Premier jour :</h2>
+                <p>- Déposer les algues dans les bioréacteurs</p>
+                <p>- Réaliser les mesures témoins (qté C02) des 2 bacs</p>
+                <p>- Exposer l'un des deux bacs à une fréquence de 700Hz pendant 5 minutes</p>
+            </div>
+            <div class="flexcolumn">
+                <h2>Autres jours</h2>
+                <p>- Exposer l'un des deux bacs à une fréquence de 700Hz pendant 5 minutes</p>
+                <p>- Réaliser les mesures (qté C02) des 2 bacs</p>
+                <p>Répéter ce protocole 3 jours</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="resultats-attendus" style="background-image: url(./img/backgrounds/8.png)">
+        <h1>RESULTATS ATTENDUS</h1>
+        <div>
+            <p>Nous avons réalisé des recherches sur les théories et Joel Sternheimer : La génodique.</p>
+            <p>Certaines ondes précises pourraient alors inhiber ou accélérer la fabrication de certaines protéine, on parle alors de protéodie.</p>
+            <p>D'après nos recherches, ses ondes sont généralement plutôt aigues. Des expérimentations similaires à la notre ont été réalisé et on montré une meilleure croissance des plantes exposée à une protéodie.</p>
+            <p>Nous devrions donc mesurer une plus grande quantité d'02 dans le bassin exposée aux ondes sonores.</p>
+        </div>
+        <img src="./img/genodic.png">
+    </div>
+    
+    <div class="slide" id="hypothese" style="background-image: url(./img/backgrounds/10.png)">
+        <h1>HYPOTHESES</h1>
+        <div>
+            <p>SI nous remarquons une quantité de CO2 moins importante dans le bac testé que dans le bac témoins, ALORS la musique a un impact positif sur la photosynthèse.</p>
+            <p>SI nous ne remarquons pas de différences de quantité de CO2 des deux bacs, ALORS la musique n'a pas d'impact sur la photosynthèse.</p>     
+            <p>SI nous remarquons une quantité de CO2 plus importante dans le bac testé que dans le bac témoin, ALORS la musique a un impact négatif sur la photosynthèse.</p>
+        </div>
+    </div>
+
+    <div class="slide" id="montage">
+        <h1>MONTAGE</h1>
+        <div>
+            <img src="/img/montage-schema.png">
+            <img src="/img/montage.png">
+        </div>
+    </div>
+
+    <div class="slide" id="resultats" style="background-color: #FDFFF5 ;">
+        <h1>RESULTATS</h1>
+        <img src="./img/algues_testees.png">
+    </div>
+
+    <div class="slide" id="interpretation">
+        <h1>INTERPRETATION</h1>
+    </div>
+    <div class="slide" id="critiques">
+        <h1>CRITIQUES</h1>
+    </div>
+    
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/saxophone" title="saxophone icons">Saxophone & Synthesis icons created by Freepik - Flaticon</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
