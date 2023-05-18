@@ -112,6 +112,7 @@ body::-webkit-scrollbar-thumb {
 #problematique h2 {
     text-align: center;
     font-weight: bold;
+    margin: 0 20px;
 }
 #problematique p {
     text-align: center;

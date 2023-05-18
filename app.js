@@ -12,7 +12,9 @@ document.addEventListener("keypress", function(e) {
 let timeoutID;
 
 function opacityNav() {
-    css.setProperty('--navBarOpacity', "0")
+    if (window.scrollY !== 0) {
+        css.setProperty('--navBarOpacity', "0")
+    }
 }
 
 function resetTimer() {
@@ -22,4 +24,8 @@ function resetTimer() {
 }
 document.addEventListener("mousemove", resetTimer)
 // document.addEventListener("keypress", resetTimer)
-// document.addEventListener("scroll", resetTimer)
+document.addEventListener("scroll", function() {
+    if (window.scrollY < 50) {
+        resetTimer()
+    }
+})
