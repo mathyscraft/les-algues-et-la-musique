@@ -228,7 +228,7 @@ body::-webkit-scrollbar-thumb {
     h2 {
         font-size: 28px;
     }
-    p {
+    p, #critiques li {
         font-size: 16px;
     }
     .nav-bar ul {
