@@ -173,14 +173,19 @@ body::-webkit-scrollbar-thumb {
     max-width: 100%;
 }
 
+#montage {
+    background-image: url(./img/backgrounds/12.png);
+}
 #montage div {
     display: flex;
+    justify-content: space-around;
     min-width: 20%;
     max-height: 100%;
 }
 #montage img {
     min-width: 20%;
     max-height: 80%;
+    border-radius: 20px;
 }
 
 #interpretation {
@@ -251,6 +256,13 @@ body::-webkit-scrollbar-thumb {
     }
     #title p {
         font-size: 16px;
+    }
+    #montage div {
+        flex-direction: column;
+        height: 80%;
+    }
+    #montage img {
+        max-height: 50%;
     }
     #interpretation > div {
         flex-direction: column;
