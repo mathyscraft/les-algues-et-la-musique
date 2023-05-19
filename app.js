@@ -24,8 +24,14 @@ function resetTimer() {
 }
 document.addEventListener("mousemove", resetTimer)
 // document.addEventListener("keypress", resetTimer)
+
+let oldScrollValue = 0
+
 document.addEventListener("scroll", function() {
     if (window.scrollY < 50) {
         resetTimer()
+    } else if (oldScrollValue > window.scrollY) {
+        resetTimer() 
     }
+    oldScrollValue = window.scrollY
 })

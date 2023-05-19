@@ -183,6 +183,47 @@ body::-webkit-scrollbar-thumb {
     max-height: 80%;
 }
 
+#interpretation {
+    background-image: url(./img/backgrounds/14.png);
+    justify-content: space-between;
+    background-position: 0px;
+}
+ 
+#interpretation > div {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+#interpretation img {
+    max-height: 300px;
+    max-width: 100%;
+}
+#interprétation p {
+    margin: 5px;
+}
+
+#critiques ul {
+    margin: 20px;
+    padding-left: 30px;
+    font-size: 32px;
+}
+#critiques li {
+    margin: 10px 0;
+    list-style: disc;
+}
+#critiques div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#critiques h2 {   
+    text-align: center;
+    margin-right: 15px;
+    width: 60%;
+}
+
+
 @media screen and (max-width: 530px) {
     h2 {
         font-size: 28px;
@@ -210,5 +251,8 @@ body::-webkit-scrollbar-thumb {
     }
     #title p {
         font-size: 16px;
+    }
+    #interpretation > div {
+        flex-direction: column;
     }
 }
